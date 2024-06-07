@@ -1,0 +1,110 @@
+/* 
+
+- Rose White: hsl(330, 100%, 98%)
+- Light Grey: 
+- Wenge Brown: hsl(30, 10%, 34%)
+
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700 */
+:root {
+    --color-bg-main: hsl(30, 54%, 90%);
+    --color-bg-card: hsl(0, 0%, 100%);
+    --color-title: hsl(14, 45%, 36%);
+    --color-subtitle: hsl(332, 51%, 32%);
+    --color-txt: hsl(24, 5%, 18%);
+    --color-separator: hsl(30, 18%, 87%);
+
+    --font-title: "Young Serif", serif;
+    --font-txt: "Outfit", sans-serif;
+    --fw-title: 600;
+    --fw-txt: 400;
+    --fw-highlighting: 700;
+    
+    --bdr-card: 30px;
+
+}
+html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}body{margin:0;padding:0}a{text-decoration:none;color:inherit}
+body {
+    font-size: 16px;
+    font-family: var(--font-txt);
+    font-weight: var(--fw-txt);
+    background: var(--color-bg-main);
+    color: var(--color-txt);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    list-style: square;
+}
+ul li span, ol li span {
+    font-weight: var(--fw-highlighting);
+}
+ul, ol {
+    line-height: 30px;
+}
+li::marker {
+    color: var(--color-title);
+}
+hr {
+    background: var(--color-separator);
+    height: 1px;
+    border: none;
+}
+.surtitle {
+    color: var(--color-title);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: var(--fw-txt);
+}
+.subtitle {
+    color: var(--color-subtitle);
+    font-weight: var(--fw-title);
+}
+.card_recipe {
+    max-width: 1000px;
+    background: var(--color-bg-card);
+    padding: 50px;
+    border-radius: var(--bdr-card);
+}
+.img_recipe {
+    width: 100%;
+    border-radius: var(--bdr-card);
+}
+.title_recipe {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    font-weight: 400;
+}
+.recipte_nutrition {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.recipte_nutrition td,.recipte_nutrition th {
+    border-bottom: 1px solid var(--color-separator);
+    width: 50%;
+    padding: 20px 10px;
+}
+.recipte_nutrition th {
+    font-weight: var(--fw-txt);
+}
+.recipte_nutrition td {
+    color: var(--color-subtitle);
+    font-weight: var(--fw-title);
+}
