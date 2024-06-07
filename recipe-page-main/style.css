@@ -42,7 +42,7 @@ body {
     font-weight: var(--fw-txt);
     background: var(--color-bg-main);
     color: var(--color-txt);
-    padding: 50px 100px;
+    padding: 50px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,6 +80,11 @@ hr {
     background: var(--color-bg-card);
     padding: 50px;
     border-radius: var(--bdr-card);
+}
+@media screen and (max-width: 425px) {
+ .card_recipe {
+    padding: 25px;
+ }   
 }
 .img_recipe {
     width: 100%;
